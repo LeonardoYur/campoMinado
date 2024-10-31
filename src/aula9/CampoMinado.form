@@ -34,6 +34,10 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="lblCampo0">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -42,6 +46,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -50,6 +58,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -58,6 +70,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo3">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -66,6 +82,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo4">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -74,6 +94,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo5">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -82,6 +106,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo6">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -90,6 +118,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo7">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -98,6 +130,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo8">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -106,6 +142,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo9">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -114,6 +154,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo10">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -122,6 +166,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo11">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -130,6 +178,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo12">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -138,6 +190,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo13">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -146,6 +202,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo14">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -154,6 +214,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo15">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -162,6 +226,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo16">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -170,6 +238,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo17">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -178,6 +250,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo18">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -186,6 +262,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo19">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -194,6 +274,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo20">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -202,6 +286,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo21">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -210,6 +298,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo22">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -218,6 +310,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo23">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -226,6 +322,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo24">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -234,6 +334,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo25">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -242,6 +346,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo26">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -250,6 +358,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo27">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -258,6 +370,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo28">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -266,6 +382,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo29">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -274,6 +394,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo30">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -282,6 +406,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo31">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -290,6 +418,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo32">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -298,6 +430,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo33">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -306,6 +442,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo34">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -314,6 +454,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo35">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -322,6 +466,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo36">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -330,6 +478,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo37">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -338,6 +490,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo38">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -346,6 +502,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo39">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -354,6 +514,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo40">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -362,6 +526,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo41">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -370,6 +538,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo42">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -378,6 +550,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo43">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -386,6 +562,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo44">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -394,6 +574,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo45">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -402,6 +586,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo46">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -410,6 +598,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo47">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -418,6 +610,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo48">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -426,6 +622,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo49">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -434,6 +634,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo50">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -442,6 +646,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo51">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -450,6 +658,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo52">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -458,6 +670,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo53">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -466,6 +682,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo54">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -474,6 +694,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo55">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -482,6 +706,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo56">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -490,6 +718,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo57">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -498,6 +730,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo58">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -506,6 +742,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo59">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -514,6 +754,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo60">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -522,6 +766,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo61">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -530,6 +778,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo62">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
@@ -538,6 +790,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCampo63">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="20" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>

@@ -1,7 +1,9 @@
+
 package aula9;
 
 import java.awt.Color;
 import javax.swing.JLabel;
+
 
 public class CampoMinado extends javax.swing.JFrame {
 
@@ -23,12 +25,51 @@ public class CampoMinado extends javax.swing.JFrame {
         initComponents();
 
         campos = new JLabel[]{lblCampo0, lblCampo1, lblCampo2, lblCampo3, lblCampo4, lblCampo5, lblCampo6, lblCampo7, lblCampo8, lblCampo9, lblCampo10, lblCampo11, lblCampo12, lblCampo13, lblCampo14, lblCampo15, lblCampo16, lblCampo17, lblCampo18, lblCampo19, lblCampo20, lblCampo21, lblCampo22, lblCampo23, lblCampo24, lblCampo25, lblCampo26, lblCampo27, lblCampo28, lblCampo29, lblCampo30, lblCampo31, lblCampo32, lblCampo33, lblCampo34, lblCampo35, lblCampo36, lblCampo37, lblCampo38, lblCampo39, lblCampo40, lblCampo41, lblCampo42, lblCampo43, lblCampo44, lblCampo45, lblCampo46, lblCampo47, lblCampo48, lblCampo49, lblCampo50, lblCampo51, lblCampo52, lblCampo53, lblCampo54, lblCampo55, lblCampo56, lblCampo57, lblCampo58, lblCampo59, lblCampo60, lblCampo61, lblCampo62, lblCampo63};
-        bomba = new int[]{0, 0, 0, 0, 0, 0, 0, 0};
+        bomba = new int[]{0, 0, 0, 0, 0, 0, 0};
         campoMinado = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 7; i++) {
             int test = (int) (Math.random() * 63);
             bomba[i] = test;
+            System.out.println(bomba[i]);
+        }
+
+        System.out.println("=======================");
+        for (int j = 0; j < 7; j++) {
+            for (int i = 0; i < 64; i++) {
+                if (bomba[j] == i) {
+                    campoMinado[i] = -1;
+                    if (i > 7) {
+                        campoMinado[i - 7]++;
+                    }
+                    if (i > 8) {
+                        campoMinado[i - 8]++;
+                    }
+                    if (i > 9) {
+                        campoMinado[i - 9]++;
+                    }
+                    if (i != 0) {
+                        campoMinado[i - 1]++;
+                    }
+                    if (i < 56) {
+                        campoMinado[i + 7]++;
+                    }
+                    if (i < 55) {
+                        campoMinado[i + 8]++;
+                    }
+                    if (i < 54) {
+                        campoMinado[i + 9]++;
+                    }
+                    if (i != 63) {
+                        campoMinado[i + 1]++;
+                    }
+                }
+
+            }
+        }
+
+        for (int i = 0; i < 64; i++) {
+            campos[i].setText(""+campoMinado[i]);
         }
 
         for (int i = 0; i < 8; i++) {
@@ -45,13 +86,7 @@ public class CampoMinado extends javax.swing.JFrame {
     }
 
     public void Jogar() {
-        for (int j = 0; j < 8; j++) {
-            for (int i = 0; i < 64; i++) {
-                if (bomba[j] == campoMinado[i]) {
 
-                }
-            }
-        }
     }
 
     @SuppressWarnings("unchecked")
@@ -128,6 +163,8 @@ public class CampoMinado extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(500, 500));
         getContentPane().setLayout(new java.awt.GridLayout(8, 8));
 
+        lblCampo0.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo0.setOpaque(true);
         lblCampo0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -136,6 +173,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo0);
 
+        lblCampo1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo1.setOpaque(true);
         lblCampo1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -144,6 +183,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo1);
 
+        lblCampo2.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo2.setOpaque(true);
         lblCampo2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -152,6 +193,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo2);
 
+        lblCampo3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo3.setOpaque(true);
         lblCampo3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -160,6 +203,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo3);
 
+        lblCampo4.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo4.setOpaque(true);
         lblCampo4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -168,6 +213,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo4);
 
+        lblCampo5.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo5.setOpaque(true);
         lblCampo5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -176,6 +223,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo5);
 
+        lblCampo6.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo6.setOpaque(true);
         lblCampo6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -184,6 +233,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo6);
 
+        lblCampo7.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo7.setOpaque(true);
         lblCampo7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -192,6 +243,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo7);
 
+        lblCampo8.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo8.setOpaque(true);
         lblCampo8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -200,6 +253,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo8);
 
+        lblCampo9.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo9.setOpaque(true);
         lblCampo9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -208,6 +263,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo9);
 
+        lblCampo10.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo10.setOpaque(true);
         lblCampo10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -216,6 +273,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo10);
 
+        lblCampo11.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo11.setOpaque(true);
         lblCampo11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -224,6 +283,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo11);
 
+        lblCampo12.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo12.setOpaque(true);
         lblCampo12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -232,6 +293,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo12);
 
+        lblCampo13.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo13.setOpaque(true);
         lblCampo13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -240,6 +303,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo13);
 
+        lblCampo14.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo14.setOpaque(true);
         lblCampo14.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -248,6 +313,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo14);
 
+        lblCampo15.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo15.setOpaque(true);
         lblCampo15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -256,6 +323,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo15);
 
+        lblCampo16.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo16.setOpaque(true);
         lblCampo16.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -264,6 +333,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo16);
 
+        lblCampo17.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo17.setOpaque(true);
         lblCampo17.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -272,6 +343,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo17);
 
+        lblCampo18.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo18.setOpaque(true);
         lblCampo18.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -280,6 +353,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo18);
 
+        lblCampo19.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo19.setOpaque(true);
         lblCampo19.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -288,6 +363,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo19);
 
+        lblCampo20.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo20.setOpaque(true);
         lblCampo20.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -296,6 +373,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo20);
 
+        lblCampo21.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo21.setOpaque(true);
         lblCampo21.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -304,6 +383,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo21);
 
+        lblCampo22.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo22.setOpaque(true);
         lblCampo22.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -312,6 +393,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo22);
 
+        lblCampo23.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo23.setOpaque(true);
         lblCampo23.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -320,6 +403,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo23);
 
+        lblCampo24.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo24.setOpaque(true);
         lblCampo24.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -328,6 +413,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo24);
 
+        lblCampo25.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo25.setOpaque(true);
         lblCampo25.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -336,6 +423,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo25);
 
+        lblCampo26.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo26.setOpaque(true);
         lblCampo26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -344,6 +433,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo26);
 
+        lblCampo27.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo27.setOpaque(true);
         lblCampo27.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -352,6 +443,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo27);
 
+        lblCampo28.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo28.setOpaque(true);
         lblCampo28.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -360,6 +453,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo28);
 
+        lblCampo29.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo29.setOpaque(true);
         lblCampo29.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -368,6 +463,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo29);
 
+        lblCampo30.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo30.setOpaque(true);
         lblCampo30.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -376,6 +473,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo30);
 
+        lblCampo31.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo31.setOpaque(true);
         lblCampo31.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -384,6 +483,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo31);
 
+        lblCampo32.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo32.setOpaque(true);
         lblCampo32.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -392,6 +493,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo32);
 
+        lblCampo33.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo33.setOpaque(true);
         lblCampo33.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -400,6 +503,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo33);
 
+        lblCampo34.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo34.setOpaque(true);
         lblCampo34.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -408,6 +513,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo34);
 
+        lblCampo35.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo35.setOpaque(true);
         lblCampo35.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -416,6 +523,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo35);
 
+        lblCampo36.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo36.setOpaque(true);
         lblCampo36.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -424,6 +533,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo36);
 
+        lblCampo37.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo37.setOpaque(true);
         lblCampo37.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -432,6 +543,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo37);
 
+        lblCampo38.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo38.setOpaque(true);
         lblCampo38.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -440,6 +553,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo38);
 
+        lblCampo39.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo39.setOpaque(true);
         lblCampo39.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -448,6 +563,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo39);
 
+        lblCampo40.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo40.setOpaque(true);
         lblCampo40.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -456,6 +573,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo40);
 
+        lblCampo41.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo41.setOpaque(true);
         lblCampo41.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -464,6 +583,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo41);
 
+        lblCampo42.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo42.setOpaque(true);
         lblCampo42.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -472,6 +593,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo42);
 
+        lblCampo43.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo43.setOpaque(true);
         lblCampo43.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -480,6 +603,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo43);
 
+        lblCampo44.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo44.setOpaque(true);
         lblCampo44.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -488,6 +613,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo44);
 
+        lblCampo45.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo45.setOpaque(true);
         lblCampo45.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -496,6 +623,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo45);
 
+        lblCampo46.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo46.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo46.setOpaque(true);
         lblCampo46.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -504,6 +633,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo46);
 
+        lblCampo47.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo47.setOpaque(true);
         lblCampo47.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -512,6 +643,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo47);
 
+        lblCampo48.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo48.setOpaque(true);
         lblCampo48.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -520,6 +653,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo48);
 
+        lblCampo49.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo49.setOpaque(true);
         lblCampo49.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -528,6 +663,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo49);
 
+        lblCampo50.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo50.setOpaque(true);
         lblCampo50.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -536,6 +673,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo50);
 
+        lblCampo51.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo51.setOpaque(true);
         lblCampo51.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -544,6 +683,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo51);
 
+        lblCampo52.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo52.setOpaque(true);
         lblCampo52.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -552,6 +693,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo52);
 
+        lblCampo53.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo53.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo53.setOpaque(true);
         lblCampo53.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -560,6 +703,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo53);
 
+        lblCampo54.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo54.setOpaque(true);
         lblCampo54.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -568,6 +713,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo54);
 
+        lblCampo55.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo55.setOpaque(true);
         lblCampo55.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -576,6 +723,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo55);
 
+        lblCampo56.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo56.setOpaque(true);
         lblCampo56.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -584,6 +733,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo56);
 
+        lblCampo57.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo57.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo57.setOpaque(true);
         lblCampo57.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -592,6 +743,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo57);
 
+        lblCampo58.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo58.setOpaque(true);
         lblCampo58.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -600,6 +753,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo58);
 
+        lblCampo59.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo59.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo59.setOpaque(true);
         lblCampo59.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -608,6 +763,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo59);
 
+        lblCampo60.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo60.setOpaque(true);
         lblCampo60.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -616,6 +773,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo60);
 
+        lblCampo61.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo61.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo61.setOpaque(true);
         lblCampo61.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -624,6 +783,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo61);
 
+        lblCampo62.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo62.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo62.setOpaque(true);
         lblCampo62.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -632,6 +793,8 @@ public class CampoMinado extends javax.swing.JFrame {
         });
         getContentPane().add(lblCampo62);
 
+        lblCampo63.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        lblCampo63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCampo63.setOpaque(true);
         lblCampo63.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -903,36 +1066,36 @@ public class CampoMinado extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+    /* Set the Nimbus look and feel */
+    //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+    /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
+     */
+    try {
+        for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+            if ("Nimbus".equals(info.getName())) {
+                javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                break;
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CampoMinado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CampoMinado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CampoMinado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CampoMinado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new CampoMinado().setVisible(true);
-            }
-        });
+    } catch (ClassNotFoundException ex) {
+        java.util.logging.Logger.getLogger(CampoMinado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    } catch (InstantiationException ex) {
+        java.util.logging.Logger.getLogger(CampoMinado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    } catch (IllegalAccessException ex) {
+        java.util.logging.Logger.getLogger(CampoMinado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        java.util.logging.Logger.getLogger(CampoMinado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
     }
+    //</editor-fold>
+
+    /* Create and display the form */
+    java.awt.EventQueue.invokeLater(new Runnable() {
+        public void run() {
+            new CampoMinado().setVisible(true);
+        }
+    });
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel lblCampo0;
